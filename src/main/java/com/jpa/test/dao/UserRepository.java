@@ -25,7 +25,7 @@ public interface UserRepository extends CrudRepository<User, Integer> {
 	
 	@Query(value = "select u FROM User u where u.id =:n")
 	public List<User> getUserById(@Param("n") int id);
-	
+	//native query
 	
 	/*
 
