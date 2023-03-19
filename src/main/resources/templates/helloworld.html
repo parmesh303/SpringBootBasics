@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello World App</title>
+</head>
+<body>
+ <h1 th:text="  ${message} + ' App'"> </h1>
+ <h3 th:text="${ #strings.toUpperCase(message) }"></h3>
+  	<h2 th:text="${currentDate}"></h2>
+</body>
+</html>
